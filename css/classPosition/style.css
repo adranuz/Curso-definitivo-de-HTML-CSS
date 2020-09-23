@@ -1,0 +1,53 @@
+* {
+  background: teal;
+}
+html {
+  font-family: Arial;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* relative
+nombra como elemento padre sobre las demas positions*/
+section {
+  height: 90vh;
+  border: 1em dotted blueviolet;
+  position: relative;
+  height: 200vh;
+}
+div {
+  display: inline-block;
+  border: .2em dashed pink;
+  height: 4em;
+  width: 4em;
+}
+/* absolute
+puede moverse sobre el elemento padre relative mediante medidas */
+div:nth-of-type(1) {
+  background: red;
+  position: absolute;
+  top: 6em;
+}
+/* fixed
+puede moverse por todo el viewport de la ventana pero queda fijo
+*/
+div:nth-of-type(2) {
+  background: blue;
+  position: fixed;
+  top: 12em;
+}
+/* stiky
+queda fija dentro del relative mas sercano, 
+si es que este tiene un scroll*/
+div:nth-of-type(3) {
+  background: green;
+  position: sticky;
+  top: 12em;
+}
+/* static
+Es el position por default, no hace nada*/
+div:nth-of-type(4) {
+  position: static; 
+  background: yellow;
+}

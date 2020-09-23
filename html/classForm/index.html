@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  
+  <main>
+    <section>
+
+      <!-- button vs index:submit -->
+      <input type="submit" value="Envitate">
+      <button type="submit">Send</button>
+  
+      <!-- semantica de forms -->
+      <form style="display: flex; flex-direction: column;">
+        <label for="name">
+          <span>Cuál es tu nombre?</span>
+          <input type="text" id="name" placeholder="Name">
+        </label>
+        <label for="date">
+          <span>Cuándo iniciaste a estudiar?</span>
+          <input type="date" id="date">
+        </label>
+        <label for="time">
+          <span>Qué horario tomas para estudiar?</span>
+          <input type="time" id="time">
+        </label>
+      </form>
+
+
+      <!-- semantica de forms con post by url -->
+      <form action="">
+        <label for="hour">
+          <span>Hora</span>
+          <input type="time" id="hour" name="hour">
+        </label>
+        <label for="day">
+          <span>Día</span>
+          <input type="date" id="day" name="day">
+        </label>
+        <label for="week">
+          <span>Semana</span>
+          <input type="week" id="week" name="week">
+        </label>
+        <label for="month">
+          <span>Mes</span>
+          <input type="month" id="month" name="month">
+        </label>
+        <input type="submit">
+      </form>
+
+      <!-- FORM con post by url con un solo input -->
+      <form action="">
+        <label for="calendar">
+          <span>Calendario</span>
+          <input type="datetime-local" name="calendar" id="calendar">
+        </label>
+        <input type="submit" value="">
+      </form>
+
+
+      <!-- FORM require & autocomplete -->
+      <form>
+        <label for="name">
+          <span>¿Cuál es tu nombre?</span>
+          <input type="text" name="name" id="name" autocomplete="name" required>
+        </label>
+        <label for="email">
+          <span>¿Cuál es tu correo?</span>
+          <input type="text" name="email" id="email" autocomplete="email" required>
+        </label>
+        <label for="country">
+          <span>¿Cuál es tu país de origen?</span>
+          <input type="text" name="country" id="country" autocomplete="country" required>
+        </label>
+        <label for="cp">
+          <span>¿Cuál es tu código postal?</span>
+          <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+        </label>
+        <input type="submit">
+      </form>
+
+
+    </section>
+  </main>
+</body>
+</html>

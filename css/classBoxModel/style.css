@@ -1,0 +1,12 @@
+* {
+  background: teal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box {
+  background-color: red;
+  padding: 10px;
+  margin: 30px;
+  border: 10px solid cyan; 
+}

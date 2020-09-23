@@ -1,0 +1,36 @@
+* {
+  background: teal;
+}
+html {
+  font-size: 14px;
+  font-family: Arial;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* hermano cercano */
+/* aplica en <p> que tenga antes un <h2> */
+h2 + p {
+  color: red;
+}
+
+
+/* hermano general */
+/* aplica en <p> tengan como hermano general un <h2> */
+h2 ~ p {
+  background-color: cyan;
+}
+
+
+/* hijo */
+/* aplica en <h2> que tengan como padre directo un <section> */
+section > h2 {
+  color: greenyellow;
+}
+
+
+/* descendiente */
+/* aplica en <p> que esten dentro de un <div> */
+div p {
+  box-shadow: 0 0 5px 0 black;
+}

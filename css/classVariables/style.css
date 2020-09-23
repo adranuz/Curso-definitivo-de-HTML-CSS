@@ -1,0 +1,43 @@
+:root { /*root == <html>*/
+  --primary-color: teal;
+  --secondary-color: rgb(35, 35, 63);
+  --third-color: #b4def7;
+  --border-color: violet;
+  --header-size: 4rem;
+  --p-size: 1.5rem;
+}
+* {
+  background: var(--primary-color);
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: Arial;
+  box-sizing: border-box;
+
+}
+
+section {
+  border: 1em dotted var(--border-color);
+  position: relative;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--secondary-color);
+}
+main {
+  width: 100vw;
+  height: 70vh;
+  color:  var(--secondary-color);
+  font-size: var(--p-size);
+}
+h1 {
+  font-size: var(--header-size);
+}
+footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--third-color);
+}

@@ -1,0 +1,64 @@
+* {
+  background: teal;
+}
+html {
+  font-family: Arial;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* la medida en px nunca cambia*/
+p {
+  font-size: 18px;
+}
+
+/* la medida en % toma de referencia la medida heredada
+en este caso como no hemos especificado hereda la de
+todo el documento, y su medida sera el % de eso
+en este caso 9px
+
+en cajas toma el 100% de la caja contenedora 
+y usaría su % */
+p:nth-of-type(2) {
+ font-size: 50%;
+}
+
+
+/* la medida em toma el tamaño de fuente que tiene el 
+padre directo si es que esta especificado,
+sino ira subiendo hasta encontrar uno */
+section {
+  font-size: 20px;
+}
+p:nth-of-type(3) {
+  font-size: 1.5em;
+}
+
+
+
+/* la medida rem toma la medida relativa del tag html*/
+html {
+  font-size: 62.5%; /*Esto iguala a 1rem con 1px */
+}
+p:nth-of-type(4) {
+  font-size: 1.5rem;
+}
+
+
+
+/* min max width */
+p:nth-of-type(5) {
+  background-color: hotpink;
+  min-width: 50rem;
+  max-width: 60rem;
+}
+
+
+/* vh vw */
+p:nth-of-type(6) {
+  background-color: hotpink;
+  width: 10vw;
+  height: 10vh;
+  overflow:hidden;
+}
